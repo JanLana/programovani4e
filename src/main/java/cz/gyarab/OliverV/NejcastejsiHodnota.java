@@ -1,4 +1,4 @@
-package cz.gyarab.richard_t;
+package cz.gyarab.OliverV;
 
 public class NejcastejsiHodnota {
     static void main() {
