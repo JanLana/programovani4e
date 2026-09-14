@@ -11,7 +11,7 @@ public class Mode {
         var random = new Random();
 
         for (int i = 0; i < 10; i++)
-            numbers.add(random.nextInt(101));
+            numbers.add(random.nextInt(11));
 
         IO.println(numbers);
 
