@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class NejcastejsiCislo {
-    public static void main(String[] args) {
+     static void main() {
         ArrayList<Integer> cisla = new ArrayList<>();
         cisla.add(5);
         cisla.add(6);
