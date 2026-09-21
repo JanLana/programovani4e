@@ -1,1 +1,29 @@
+import java.util.HashMap;
+import java.util.Map;
 
+public class NejCastejsiHodnota {
+
+    public static void main(String[] args) {
+        int[] cisla = {12, 45, 7, 12, 89, 45, 12, 3, 45, 18, 12};
+
+        System.out.println(nejcastejsiHodnota(cisla));
+    }
+
+    public static int nejcastejsiHodnota(int[] pole) {
+        Map<Integer, Integer> vyskyt = new HashMap<>();
+
+        for (int cislo : pole) {
+            vyskyt.put(cislo, vyskyt.getOrDefault(cislo, 0) + 1);
+        }
+
+        int nejcastejsi = pole[0];
+
+        for (int cislo : pole) {
+            if (vyskyt.get(cislo) > vyskyt.get(nejcastejsi)) {
+                nejcastejsi = cislo;
+            }
+        }
+
+        return nejcastejsi;
+    }
+}
